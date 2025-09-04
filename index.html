@@ -4,220 +4,149 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hoja de Vida — Miguel Alejandro Mamani Villegas</title>
+    <meta name="description"
+        content="Hoja de Vida de Miguel Alejandro Mamani Villegas — Desarrollador de Software. Experiencia en ENDE, Kplian, BoA; habilidades en React, NestJS, Docker, PostgreSQL y más." />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://example.com/hoja-de-vida-miguel-mamani" />
+    <!-- Open Graph / Twitter for SEO preview -->
+    <meta property="og:title" content="Hoja de Vida — Miguel Alejandro Mamani Villegas" />
+    <meta property="og:description"
+        content="Desarrollador de Software con experiencia en sistemas corporativos, integraciones y apps web/mobile." />
+    <meta property="og:type" content="profile" />
+    <meta property="og:locale" content="es_BO" />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Schema.org Person JSON-LD -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Miguel Alejandro Mamani Villegas",
+    "jobTitle": "Desarrollador de Software",
+    "email": "mailto:miguel.ale19934@gmail.com",
+    "nationality": "Boliviano",
+    "telephone": "+59160714966",
+    "address": {"@type": "PostalAddress", "addressLocality": "Calle Cajamarca", "addressCountry": "BO"}
+  }
+  </script>
+
+    <!-- CSS externo -->
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+    <nav class="skip-links" aria-label="Enlaces de salto">
+        <a href="#contenido">Saltar al contenido</a>
+    </nav>
+
     <div class="page">
-        <header class="cv-header">
-            <h1 class="name">MIGUEL ALEJANDRO MAMANI VILLEGAS</h1>
-            <p class="subtitle">Desarrollador de Software</p>
-            <p class="id-line">C.I.: 4013640 CB · Nacionalidad: Boliviano · Estado civil: Soltero</p>
-            <div class="actions">
-                <button class="btn" onclick="window.print()">Imprimir / Guardar en PDF</button>
+        <header class="cv-header" role="banner">
+            <div class="branding" itemscope itemtype="https://schema.org/Person">
+                <div class="avatar" aria-hidden="true"></div>
+                <div>
+                    <h1 class="name" itemprop="name">Miguel Alejandro Mamani Villegas</h1>
+                    <p class="subtitle" itemprop="jobTitle">Desarrollador de Software</p>
+                </div>
+            </div>
+            <div class="toolbar" role="navigation" aria-label="Acciones">
+                <button class="btn" type="button" onclick="window.print()">Imprimir / Guardar PDF</button>
             </div>
         </header>
 
-        <main class="grid" role="main">
-            <!-- Columna izquierda: Experiencia -->
-            <div class="col-left">
-                <section class="card">
-                    <h2><span class="icon">◆</span>Experiencia Laboral</h2>
-                    <div class="timeline">
+        <main id="contenido" role="main" aria-labelledby="titulo-cv">
+            <h2 id="titulo-cv" class="visually-hidden">Hoja de Vida — Contenido</h2>
 
-                        <article class="job">
-                            <h3>Cargo GSA — <em>Desarrollo de Sistemas</em></h3>
-                            <div class="meta">01/08/2025 – Actual </div>
-                            <ul class="list">
-                                <li>Implementación sistema Carga
-                                </li> 
-                            </ul>
-                        </article>
-
-                        <article class="job">
-                            <h3>ENDE Servicios y Construcción — <em>Ingeniero de Software</em></h3>
-                            <div class="meta">09/04/2024 – 31/07/2025</div>
-                            <ul class="list">
-                                <li>Implementación de sistema de talento humano.</li>
-                                <li>Implementación de sistema de impuestos.</li>
-                                <li>Implementación de sistema de cuestionarios.</li>
-                                <li>Implementación de sistema de Evaluación de Desempeño.</li>
-                                <li>Mantenimiento y soporte del sistema de Remuneraciones.</li>
-                                <li>Mantenimiento y soporte al sistema de Fondos con Cargos a Rendición de Cuentas.</li>
-                                <li>Soporte y refactorización del sistema de seguimiento a oportunidades de mejora.</li>
-                                <li>Soporte al sistema File Personal.</li>
-                                <li>Mantenimiento y soporte del sistema de Presupuesto.</li>
-                                <li>Mantenimiento y soporte del sistema de Asistencias.</li>
-                                <li>Integración de Sistema de Asistencias con ZKBioSecurity.</li>
-                                <li>Soporte y reportes para el sistema ZKBioSecurity.</li>
-                                <li>Implementación del módulo de hojas de tiempo para el sistema de asistencias.</li>
-                                <li>Integración del módulo de hojas de tiempo con el módulo de días de trabajo del
-                                    sistema de asistencias para enlazar con el sistema de planillas y generar planilla
-                                    de sueldos.</li>
-                                <li>Implementación del módulo de solicitud de teletrabajo (sistema de asistencias).</li>
-                                <li>Implementación del módulo de compensaciones (sistema de asistencias).</li>
-                                <li>Implementación de programación de vacaciones (sistema de asistencias).</li>
-                                <li>Implementación del módulo de ajuste de memorias para el sistema de presupuestos.
-                                </li>
-                            </ul>
-                        </article>
-
-                        <article class="job">
-                            <h3>ENDE Transmisión — <em>Desarrollo de Sistemas</em></h3>
-                            <div class="meta">13/02/2020 – 30/04/2024 </div>
-                            <ul class="list">
-                                <li>Implementación y soporte de múltiples módulos corporativos (talento humano,
-                                    impuestos, cuestionarios, evaluación de desempeño, remuneraciones y asistencias).
-                                </li>
-                                <li>Integraciones con ZKBioSecurity y generación de reportes asociados.</li>
-                                <li>Soporte a sistemas de presupuesto, planillas, y procesos de refactorización de
-                                    aplicaciones internas.</li>
-                            </ul>
-                        </article>
-
-                        <article class="job">
-                            <h3>ENDE Transmisión — <em>Desarrollo de Sistemas</em></h3>
-                            <div class="meta">03/06/2019 – 24/01/2020 </div>
-                            <ul class="list">
-                                <li>Implementación del sistema de asistencias con los siguientes módulos:</li>
-                                <li style="list-style: circle; margin-left: 16px;">Permisos</li>
-                                <li style="list-style: circle; margin-left: 16px;">Vacaciones</li>
-                                <li style="list-style: circle; margin-left: 16px;">Mes de trabajo con importación desde
-                                    Excel</li>
-                                <li style="list-style: circle; margin-left: 16px;">Integración del mes de trabajo con el
-                                    sistema de remuneraciones</li>
-                                <li style="list-style: circle; margin-left: 16px;">Migración de saldos de vacaciones
-                                    desde el sistema antiguo</li>
-                            </ul>
-                        </article>
-
-                        <article class="job">
-                            <h3>Kplian — <em>Consultor</em></h3>
-                            <div class="meta">15/01/2019 – 31/05/2019 </div>
-                            <ul class="list">
-                                <li>Soporte al sistema de adquisiciones.</li>
-                                <li>Implementación de plantillas de resultados para el sistema de contabilidad:</li>
-                                <li style="list-style: circle; margin-left: 16px;">Actualización de Gasto e Ingreso</li>
-                                <li style="list-style: circle; margin-left: 16px;">Asiento de Utilidad de Gestión</li>
-                                <li style="list-style: circle; margin-left: 16px;">Cierre de cuentas de Ingreso y de
-                                    Gasto</li>
-                                <li style="list-style: circle; margin-left: 16px;">Asiento de Apertura</li>
-                                <li style="list-style: circle; margin-left: 16px;">Asientos de Ajuste (Moneda MA y MT)
-                                </li>
-                                <li style="list-style: circle; margin-left: 16px;">Asiento de Cierre Contable</li>
-                            </ul>
-                        </article>
-
-                        <article class="job">
-                            <h3>Boliviana de Aviación — <em>Consultor</em></h3>
-                            <div class="meta">07/11/2016 – 31/12/2018</div>
-                            <ul class="list">
-                                <li>Implementación del sistema de gestión de materiales para aeronaves.</li>
-                                <li>Integración con el sistema de adquisiciones.</li>
-                                <li>Soporte y mantenimiento a los sistemas de ingresos, contabilidad, facturación,
-                                    agencia, cajas y boletos.</li>
-                                <li>Implantación de reportes para el sistema de contabilidad.</li>
-                                <li>Implementación del sistema de certificados de trabajo y viáticos.</li>
-                            </ul>
-                        </article>
-
-                        <article class="job">
-                            <h3>Kplian — <em>Consultor</em></h3>
-                            <div class="meta">01/10/2015 – 03/10/2016 </div>
-                            <ul class="list">
-                                <li>Soporte y mantenimiento del sistema de organigrama.</li>
-                                <li>Implementación de reportes para el sistema de presupuesto:</li>
-                                <li style="list-style: circle; margin-left: 16px;">Control Presupuestario · Partida
-                                    Ejecución · Reportes de Formulación · Ejecución de Proyectos</li>
-                                <li>Implementación de reportes para contabilidad:
-                                    <span style="display:block; margin-left: 16px;">LCV–IVA, Proyectos, Anexos, Estado
-                                        de Cuentas, Libro Mayor</span>
-                                </li>
-                                <li>Implementación de reportes de tesorería:
-                                    <span style="display:block; margin-left: 16px;">Pagos, Procesos Pendientes, Pagos
-                                        Básicos, Pagos por Conceptos</span>
-                                </li>
-                                <li>Soporte y mantenimiento al sistema PXP.</li>
-                            </ul>
-                        </article>
-
-                        <article class="job">
-                            <h3>SEDAG — <em>Pasante</em></h3>
-                            <div class="meta">08/07/2014 – 29/08/2014 </div>
-                            <ul class="list">
-                                <li>Mantenimiento preventivo y correctivo de computadoras.</li>
-                                <li>Soporte técnico (hardware y software) e instalación de software.</li>
-                                <li>Asistencia en apoyo administrativo y desarrollo de una página web demo.</li>
-                            </ul>
-                        </article>
-                    </div>
-                </section>
-            </div>
-
-            <!-- Columna derecha: Datos, Formación, Habilidades, Cursos -->
-            <aside class="col-right">
-                <section class="card">
-                    <h2><span class="icon">◆</span>Datos Personales</h2>
-                    <div class="contact">
-                        <div><strong>Fecha de Nacimiento:</strong><br>16 de marzo de 1993 (31 años)</div>
-                        <div><strong>Lugar de Nacimiento:</strong><br>Potosí, Sud Chichas (Chorolque)</div>
-                        <div><strong>Domicilio:</strong><br>Calle Cajamarca</div>
-                        <div><strong>Celular:</strong><br>60714966</div>
-                        <div><strong>Correo:</strong><br><a
-                                href="mailto:miguel.ale19934@gmail.com">miguel.ale19934@gmail.com</a></div>
-                        <div><strong>Identificación:</strong><br>Cédula 4013640 CB</div>
-                    </div>
+            <!-- Columna izquierda -->
+            <aside class="sidebar" aria-label="Perfil y detalles">
+                <section class="card" id="perfil">
+                    <h2>Perfil / Título</h2>
+                    <p>Desarrollador de Software</p>
                 </section>
 
-                <section class="card">
-                    <h2><span class="icon">◆</span>Formación Académica</h2>
-                    <ul class="list">
-                        <li><strong>INFOCAL (Instituto Tecnológico)</strong> — Técnico Superior en Sistemas Informáticos
-                            · 2014</li>
-                        <li><strong>U.E. “Gregorio Pacheco”</strong> — Bachiller en Humanidades · 2010</li>
-                        <li><strong>Otros</strong> — Licenciatura en Ingeniería Comercial <em>(egresado)</em></li>
+                <section class="card" id="datos-personales">
+                    <h2>Datos personales</h2>
+                    <dl class="data">
+                        <dt>C.I.</dt>
+                        <dd>4013640 CB</dd>
+                        <dt>Nacionalidad</dt>
+                        <dd>Boliviano</dd>
+                        <dt>Estado civil</dt>
+                        <dd>Soltero</dd>
+                        <dt>Fecha de nacimiento</dt>
+                        <dd><time datetime="1993-03-16">16 de marzo de 1993</time> (31 años)</dd>
+                        <dt>Lugar de nacimiento</dt>
+                        <dd>Potosí, Sud Chichas (Chorolque)</dd>
+                        <dt>Domicilio</dt>
+                        <dd>Calle Cajamarca</dd>
+                        <dt>Celular</dt>
+                        <dd><a href="tel:+59160714966" rel="nofollow">60714966</a></dd>
+                        <dt>Correo</dt>
+                        <dd><a href="mailto:miguel.ale19934@gmail.com">miguel.ale19934@gmail.com</a></dd>
+                    </dl>
+                </section>
+
+                <section class="card" id="idiomas">
+                    <h2>Idiomas</h2>
+                    <ul class="langs">
+                        <li>Español (nativo)</li>
+                        <li>Inglés (intermedio)</li>
                     </ul>
                 </section>
 
-                <section class="card">
-                    <h2><span class="icon">◆</span>Idiomas</h2>
-                    <div class="chips">
-                        <span class="chip">Español (nativo)</span>
-                        <span class="chip">Inglés (intermedio)</span>
-                    </div>
+                <section class="card" id="habilidades">
+                    <h2>Habilidades técnicas</h2>
+                    <h3>Lenguajes</h3>
+                    <p>
+                        <span class="pill">HTML</span>
+                        <span class="pill">PHP</span>
+                        <span class="pill">SQL</span>
+                        <span class="pill">CSS</span>
+                        <span class="pill">C#</span>
+                        <span class="pill">JavaScript</span>
+                        <span class="pill">TypeScript</span>
+                    </p>
+                    <h3>Bases de datos</h3>
+                    <p>
+                        <span class="pill">MySQL</span>
+                        <span class="pill">PostgreSQL</span>
+                        <span class="pill">SQL Server</span>
+                        <span class="pill">MongoDB</span>
+                    </p>
+                    <h3>Sistemas operativos</h3>
+                    <p>
+                        <span class="pill">Windows 7/8/10</span>
+                        <span class="pill">Ubuntu</span>
+                        <span class="pill">Ubuntu Server</span>
+                        <span class="pill">CentOS 6/7</span>
+                    </p>
+                    <h3>Frameworks / Otros</h3>
+                    <p>
+                        <span class="pill">Docker</span>
+                        <span class="pill">Git</span>
+                        <span class="pill">React</span>
+                        <span class="pill">React Native</span>
+                        <span class="pill">Next.js</span>
+                        <span class="pill">NestJS</span>
+                        <span class="pill">Vue.js</span>
+                        <span class="pill">Node.js</span>
+                        <span class="pill">Flutter</span>
+                        <span class="pill">ExtJS</span>
+                    </p>
                 </section>
 
-                <section class="card">
-                    <h2><span class="icon">◆</span>Habilidades Técnicas</h2>
-                    <h3 style="margin:.2rem 0 .2rem; font-size:1rem;">Lenguajes</h3>
-                    <div class="chips">
-                        <span class="chip">HTML</span><span class="chip">PHP</span><span class="chip">SQL</span><span
-                            class="chip">CSS</span><span class="chip">C#</span><span class="chip">JavaScript</span><span
-                            class="chip">TypeScript</span>
-                    </div>
-                    <h3 style="margin:.8rem 0 .2rem; font-size:1rem;">Bases de Datos</h3>
-                    <div class="chips">
-                        <span class="chip">MySQL</span><span class="chip">PostgreSQL</span><span class="chip">SQL
-                            Server</span><span class="chip">MongoDB</span>
-                    </div>
-                    <h3 style="margin:.8rem 0 .2rem; font-size:1rem;">Sistemas Operativos</h3>
-                    <div class="chips">
-                        <span class="chip">Windows 7/8/10</span><span class="chip">Ubuntu</span><span
-                            class="chip">Ubuntu Server</span><span class="chip">CentOS 6/7</span>
-                    </div>
-                    <h3 style="margin:.8rem 0 .2rem; font-size:1rem;">Frameworks / Otros</h3>
-                    <div class="chips">
-                        <span class="chip">Docker</span><span class="chip">Git</span><span
-                            class="chip">React</span><span class="chip">React Native</span><span
-                            class="chip">Next.js</span><span class="chip">NestJS</span><span
-                            class="chip">Vue.js</span><span class="chip">Node.js</span><span
-                            class="chip">Flutter</span><span class="chip">ExtJS</span>
-                    </div>
+                <section class="card" id="formacion">
+                    <h2>Formación académica</h2>
+                    <ul class="edus">
+                        <li><strong>INFOCAL (Instituto Tecnológico)</strong> — Técnico Superior en Sistemas Informáticos
+                            · 2014</li>
+                        <li><strong>U.E. “Gregorio Pacheco”</strong> — Bachiller en Humanidades · 2010</li>
+                        <li><strong>Otros</strong> — Licenciatura en Ingeniería Comercial (egresado)</li>
+                    </ul>
                 </section>
 
-                <section class="card">
-                    <h2><span class="icon">◆</span>Cursos y Seminarios</h2>
-                    <ul class="list">
+                <section class="card" id="cursos">
+                    <h2>Cursos y seminarios</h2>
+                    <ul class="courses">
                         <li><strong>Crecimiento Personal 1</strong> — 07–08/10/2011</li>
                         <li><strong>React: De cero a experto (Hooks y MERN)</strong> — 24/04/2024</li>
                         <li><strong>React Native: Apps para iOS y Android (Ed. 2024)</strong> — 24/04/2024</li>
@@ -226,14 +155,158 @@
                     </ul>
                 </section>
             </aside>
+
+            <!-- Columna derecha: Experiencia -->
+            <section class="section" aria-label="Experiencia laboral">
+                <article class="card job" id="gsa">
+                    <header>
+                        <span class="title">Cargo GSA — Desarrollo de Sistemas</span>
+                        <span class="org">(Implementación sistema Carga)</span>
+                        <time datetime="2025-08-01">01/08/2025</time>
+                        <span>–</span>
+                        <time datetime="present">Actual</time>
+                    </header>
+                    <ul>
+                        <li>Implementación sistema Carga.</li>
+                    </ul>
+                </article>
+
+                <article class="card job" id="ende-sc">
+                    <header>
+                        <span class="title">ENDE Servicios y Construcción — Ingeniero de Software</span>
+                        <time datetime="2024-04-09">09/04/2024</time>
+                        <span>–</span>
+                        <time datetime="2025-07-31">31/07/2025</time>
+                    </header>
+                    <ul>
+                        <li>Implementación de sistema de talento humano.</li>
+                        <li>Implementación de sistema de impuestos.</li>
+                        <li>Implementación de sistema de cuestionarios.</li>
+                        <li>Implementación de sistema de Evaluación de Desempeño.</li>
+                        <li>Mantenimiento y soporte del sistema de Remuneraciones.</li>
+                        <li>Mantenimiento y soporte al sistema de Fondos con Cargos a Rendición de Cuentas.</li>
+                        <li>Soporte y refactorización del sistema de seguimiento a oportunidades de mejora.</li>
+                        <li>Soporte al sistema File Personal.</li>
+                        <li>Mantenimiento y soporte del sistema de Presupuesto.</li>
+                        <li>Mantenimiento y soporte del sistema de Asistencias.</li>
+                        <li>Integración de Sistema de Asistencias con ZKBioSecurity.</li>
+                        <li>Soporte y reportes para el sistema ZKBioSecurity.</li>
+                        <li>Implementación del módulo de hojas de tiempo para el sistema de asistencias.</li>
+                        <li>Integración del módulo de hojas de tiempo con el módulo de días de trabajo del sistema de
+                            asistencias para enlazar con planillas y generar planilla de sueldos.</li>
+                        <li>Implementación del módulo de solicitud de teletrabajo (sistema de asistencias).</li>
+                        <li>Implementación del módulo de compensaciones (sistema de asistencias).</li>
+                        <li>Implementación de programación de vacaciones (sistema de asistencias).
+                        </li>
+                        <li>Implementación del módulo de ajuste de memorias para el sistema de presupuestos.</li>
+                    </ul>
+                </article>
+
+                <article class="card job" id="ende-tr-2020">
+                    <header>
+                        <span class="title">ENDE Transmisión — Desarrollo de Sistemas</span>
+                        <time datetime="2020-02-13">13/02/2020</time>
+                        <span>–</span>
+                        <time datetime="2024-04-30">30/04/2024</time>
+                    </header>
+                    <ul>
+                        <li>Implementación y soporte de módulos corporativos (talento humano, impuestos, cuestionarios,
+                            evaluación de desempeño, remuneraciones y asistencias).</li>
+                        <li>Integraciones con ZKBioSecurity y generación de reportes asociados.</li>
+                        <li>Soporte a sistemas de presupuesto, planillas, y refactorización de aplicaciones internas.
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="card job" id="ende-tr-2019">
+                    <header>
+                        <span class="title">ENDE Transmisión — Desarrollo de Sistemas</span>
+                        <time datetime="2019-06-03">03/06/2019</time>
+                        <span>–</span>
+                        <time datetime="2020-01-24">24/01/2020</time>
+                    </header>
+                    <ul>
+                        <li>Implementación del sistema de asistencias con módulos de Permisos, Vacaciones y Mes de
+                            trabajo (importación desde Excel).</li>
+                        <li>Integración del mes de trabajo con el sistema de remuneraciones.</li>
+                        <li>Migración de saldos de vacaciones desde el sistema antiguo.</li>
+                    </ul>
+                </article>
+
+                <article class="card job" id="kplian-2019">
+                    <header>
+                        <span class="title">Kplian — Consultor</span>
+                        <time datetime="2019-01-15">15/01/2019</time>
+                        <span>–</span>
+                        <time datetime="2019-05-31">31/05/2019</time>
+                    </header>
+                    <ul>
+                        <li>Soporte al sistema de adquisiciones.</li>
+                        <li>Plantillas de resultados para contabilidad: Actualización de Gasto e Ingreso, Asiento de
+                            Utilidad de Gestión, Cierre de cuentas de Ingreso y Gasto, Asiento de Apertura, Asientos de
+                            Ajuste (Moneda MA y MT) y Asiento de Cierre Contable.</li>
+                    </ul>
+                </article>
+
+                <article class="card job" id="boa">
+                    <header>
+                        <span class="title">Boliviana de Aviación — Consultor</span>
+                        <time datetime="2016-11-07">07/11/2016</time>
+                        <span>–</span>
+                        <time datetime="2018-12-31">31/12/2018</time>
+                    </header>
+                    <ul>
+                        <li>Implementación del sistema de gestión de materiales para aeronaves.</li>
+                        <li>Integración con el sistema de adquisiciones.</li>
+                        <li>Soporte y mantenimiento a ingresos, contabilidad, facturación, agencia, cajas y boletos.
+                        </li>
+                        <li>Reportes para el sistema de contabilidad.</li>
+                        <li>Certificados de trabajo y viáticos.</li>
+                    </ul>
+                </article>
+
+                <article class="card job" id="kplian-2015">
+                    <header>
+                        <span class="title">Kplian — Consultor</span>
+                        <time datetime="2015-10-01">01/10/2015</time>
+                        <span>–</span>
+                        <time datetime="2016-10-03">03/10/2016</time>
+                    </header>
+                    <ul>
+                        <li>Organigrama: soporte y mantenimiento.</li>
+                        <li>Reportes de presupuesto: Control Presupuestario, Partida Ejecución, Reportes de Formulación
+                            y Ejecución de Proyectos.</li>
+                        <li>Reportes de contabilidad: LCV–IVA, Proyectos, Anexos, Estado de Cuentas, Libro Mayor.</li>
+                        <li>Reportes de tesorería: Pagos, Procesos Pendientes, Pagos Básicos, Pagos por Conceptos.</li>
+                        <li>PXP: soporte y mantenimiento.</li>
+                    </ul>
+                </article>
+
+                <article class="card job" id="sedag">
+                    <header>
+                        <span class="title">SEDAG — Pasante</span>
+                        <time datetime="2014-07-08">08/07/2014</time>
+                        <span>–</span>
+                        <time datetime="2014-08-29">29/08/2014</time>
+                    </header>
+                    <ul>
+                        <li>Mantenimiento preventivo y correctivo de computadoras.</li>
+                        <li>Soporte técnico (hardware y software) e instalación de software.</li>
+                        <li>Apoyo administrativo y desarrollo de página web demo.</li>
+                    </ul>
+                </article>
+            </section>
         </main>
 
-        <footer class="footer">
-            <span>Última actualización:
-                <script>document.write(new Date().toLocaleDateString('es-BO'))</script>
-            </span>
+        <footer class="card" id="contacto" role="contentinfo" aria-label="Información de contacto">
+            <h2>Contacto</h2>
+            <p>¿Te interesa mi perfil? Escríbeme a <a
+                    href="mailto:miguel.ale19934@gmail.com">miguel.ale19934@gmail.com</a> o llámame al <a
+                    href="tel:+59160714966">60714966</a>.</p>
         </footer>
     </div>
+
+    <noscript>Esta página funciona sin JavaScript, pero habilitarlo mejora la experiencia de impresión.</noscript>
 </body>
 
 </html>
