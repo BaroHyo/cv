@@ -227,3 +227,137 @@ dl.data dd {
   background: color-mix(in oklab, var(--panel) 80%, var(--accent) 20%)
 }
 
+/* ===== Contenido principal ===== */
+.section {
+  display: grid;
+  gap: var(--space-5)
+}
+
+.job {
+  display: grid;
+  gap: var(--space-2);
+  padding: 16px;
+  border: 1px dashed var(--border);
+  border-radius: 12px
+}
+
+.job header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  align-items: baseline
+}
+
+.job .title {
+  font-weight: 700
+}
+
+.job .org {
+  color: var(--muted)
+}
+
+.job time {
+  font-variant-numeric: tabular-nums
+}
+
+.job ul {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 6px
+}
+
+/* ===== Navegación de salto (A11y) ===== */
+.skip-links {
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  display: flex;
+  justify-content: center
+}
+
+.skip-links a {
+  position: absolute;
+  transform: translateY(-150%);
+  background: var(--accent);
+  color: #000;
+  padding: .5rem .75rem;
+  border-radius: 8px;
+  font-weight: 700
+}
+
+.skip-links a:focus {
+  transform: translateY(10px);
+  outline: none
+}
+
+/* ===== Interacciones y estados ===== */
+:focus-visible {
+  outline: 3px solid color-mix(in oklab, var(--accent) 60%, transparent);
+  outline-offset: 2px
+}
+
+a:hover,
+.btn:hover {
+  filter: saturate(1.1)
+}
+
+@media (prefers-reduced-motion:no-preference) {
+  .card {
+    transition: border-color .2s ease, box-shadow .25s ease, transform .2s ease
+  }
+
+  .card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, .18)
+  }
+}
+
+/* ===== Tipografía ===== */
+h1,
+h2,
+h3 {
+  line-height: 1.25
+}
+
+p {
+  margin: 0
+}
+
+/* ===== Print ===== */
+@media print {
+  :root {
+    --bg: #fff;
+    --panel: #fff;
+    --text: #000;
+    --muted: #444;
+    --border: #bbb;
+    --shadow: none
+  }
+
+  header.cv-header {
+    position: static;
+    background: none;
+    padding-bottom: 0
+  }
+
+  .btn,
+  .skip-links {
+    display: none !important
+  }
+
+  .page {
+    padding: 0
+  }
+
+  .card {
+    break-inside: avoid;
+    box-shadow: none
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: .85em;
+    color: #555
+  }
+}
